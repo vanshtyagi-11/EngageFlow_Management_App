@@ -22,6 +22,14 @@ const app = express();
 // middleware
 app.use(cors());
 app.use(express.json());
+app.use(async (_req, _res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
 app.use("/api/users", userRoutes);
 app.use("/api/clients", clientRoutes);
 app.use("/api/services", serviceRoutes);
@@ -49,4 +57,4 @@ const startServer = async () => {
 
 if (require.main === module) startServer();
 
-module.exports = { app, startServer };
+module.exports = app;
