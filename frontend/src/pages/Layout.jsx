@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
-import { useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import { useAppContext } from "../contexts/AppContext";
-import Signup from "./Signup";
 
 const Layout = () => {
   //   const { isOwner, navigate } = useAppContext();
@@ -16,12 +15,13 @@ const Layout = () => {
   //   }, [isOwner]);
 
   const { IsLogin } = useAppContext();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="flex h-screen overflow-hidden bg-[#f7f9fb]">
-      <Sidebar />
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
-        <Navbar />
+        <Navbar onMenuClick={() => setIsSidebarOpen((isOpen) => !isOpen)} />
         <div className="min-h-0 flex-1 overflow-x-hidden overflow-y-auto pt-[62px]">
           <Outlet />
         </div>

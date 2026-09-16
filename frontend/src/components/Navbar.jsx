@@ -2,7 +2,7 @@ import { Bell, Menu, Search, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import { useAppContext } from "../contexts/AppContext";
 
-const Navbar = () => {
+const Navbar = ({ onMenuClick }) => {
   const { user, logout } = useAppContext();
   const roleLabel =
     user?.role === "TEAM_MEMBER"
@@ -18,6 +18,7 @@ const Navbar = () => {
         <div className="flex w-full items-center gap-4">
           {/* Mobile Menu Button */}
           <button
+            onClick={onMenuClick}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-[#50647b] transition-colors hover:bg-[#f1f5f8] lg:hidden"
             aria-label="Open menu"
           >
