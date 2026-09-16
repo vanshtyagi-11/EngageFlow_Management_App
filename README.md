@@ -4,7 +4,7 @@ EngageFlow is a modern work management platform designed for managing clients, t
 
 ## Live Demo
 
-[Open EngageFlow Live Demo](YOUR_LIVE_LINK_HERE)
+[Open EngageFlow Live Demo]- https://engage-flow.vercel.app/
 
 ## Features
 
@@ -115,55 +115,55 @@ API Modules
 The backend provides APIs for:
 
 Users
-->Clients
-->Services
-->Engagements
-->Tasks
-->Dashboard
-->Admin permissions
-->Client portal
+-Clients
+-Services
+-Engagements
+-Tasks
+-Dashboard
+-Admin permissions
+-Client portal
 
 
 Getting Started Prerequisites
 Make sure you have installed:
--> Node.js
--> MongoDB
--> npm
+- Node.js
+- MongoDB
+- npm
 
 Clone the Repository
--> git clone YOUR_GITHUB_REPOSITORY_URL
--> cd EngageFlow
+- git clone YOUR_GITHUB_REPOSITORY_URL
+- cd EngageFlow
 
 Backend Setup
--> cd backend
--> npm install
--> npm run dev
+- cd backend
+- npm install
+- npm run dev
 
 Create a .env file inside the backend folder:
 
--> PORT=3000
--> MONGO_URI=your_mongodb_connection_string
--> JWT_SECRET=your_jwt_secret
+- PORT=3000
+- MONGO_URI=your_mongodb_connection_string
+- JWT_SECRET=your_jwt_secret
 
 The backend server will run on: http://localhost:3000/
 
 Open a new terminal:
--> cd frontend
--> npm install
--> npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 Create a .env file inside the frontend folder:
-VITE_BASE_URL=http://localhost:3000
+- VITE_BASE_URL=http://localhost:3000
 
 Future Improvements
--->Real-time notifications
--->File attachments for tasks
--->Advanced analytics and reports
--->Calendar integration
--->Email notifications
--->Dark mode
--->Automated testing
--->Activity timeline and audit history
+-Real-time notifications
+-File attachments for tasks
+-Advanced analytics and reports
+-Calendar integration
+-Email notifications
+-Dark mode
+-Automated testing
+-Activity timeline and audit history
 
-Author
+Author:
 Created by Vansh Tyagi
