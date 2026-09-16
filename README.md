@@ -130,7 +130,7 @@ Make sure you have installed:
 - npm
 
 Clone the Repository
-- git clone YOUR_GITHUB_REPOSITORY_URL
+- git clone https://github.com/vanshtyagi-11/EngageFlow_Management_App
 - cd EngageFlow
 
 Backend Setup
