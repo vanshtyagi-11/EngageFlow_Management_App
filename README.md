@@ -113,8 +113,7 @@ EngageFlow/
 
 API Modules
 The backend provides APIs for:
-
-Users
+-Users
 -Clients
 -Services
 -Engagements
@@ -155,7 +154,7 @@ Open a new terminal:
 Create a .env file inside the frontend folder:
 - VITE_BASE_URL=http://localhost:3000
 
-Future Improvements
+# Future Improvements
 -Real-time notifications
 -File attachments for tasks
 -Advanced analytics and reports
@@ -165,5 +164,5 @@ Future Improvements
 -Automated testing
 -Activity timeline and audit history
 
-Author:
-Created by Vansh Tyagi
+#Author:
+Created by # Vansh Tyagi
