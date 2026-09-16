@@ -164,5 +164,5 @@ Create a .env file inside the frontend folder:
 -Automated testing
 -Activity timeline and audit history
 
-#Author:
-Created by # Vansh Tyagi
+#Author
+Created by Vansh Tyagi
